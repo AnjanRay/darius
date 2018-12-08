@@ -279,9 +279,7 @@
     .item-2 {
         left: 0px;
     }
-    .item-2 p {
-        width: 300px;
-    }
+
 
 }
 
@@ -356,6 +354,7 @@
 @media(max-width:600px){
     .package{
         padding: 0px;
+        margin-bottom: 2rem;
     }
 }
 
@@ -377,7 +376,7 @@
     }
     p{
         font-size: 18px;
-        width: 650px;
+        max-width: 650px;
         position: relative;
         padding: 25px;
         margin: auto
@@ -414,8 +413,7 @@
     
     
     .testimonial2-content p {
-        width: 350px;
-        left: 0px;
+       
     }
     }
     
@@ -445,11 +443,10 @@
 }
 .team2-member{
     margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
     img{
-        height:233px;
-        width:350px;
-        border-radius: 5px;
-        box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
+        width: 100%;  
     }
 }
 
@@ -498,8 +495,10 @@ margin-top: 25px;
     top: 50px;
 }
 @media(max-width:600px){
-    position: relative;
-    left: -20px;
+
+    .team2-member{
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -516,14 +515,16 @@ margin-top: 25px;
 .blog-photo{
     padding: 50px;
 }
-.blog1-photo img{
-    width: 355px;
-    height: 255px;
+.blog1-photo{
     position: relative;
     top: 60px;
     box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
     border-radius: 5px;
+    img{
+        width: 100%;
+     }
 }
+
 .blog1-detail{
     padding: 50px;
     h1{
@@ -565,22 +566,26 @@ margin-top: 25px;
 
 
 
-.blog2-photo img{
-        width: 355px;
-        height: 255px;
-        position: relative;
-        top: 92px;
-        box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
-        border-radius: 5px;
-        left: -30px;}
+.blog2-photo{
+    position: relative;
+    top: 92px;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
+    border-radius: 5px;
+    left: -30px;
+    img{
+        width: 100%;  
+    }
+} 
+
 
 
 @media(max-width:600px){
     .blog1-detail {
         padding: 75px;
     }
-    .blog2-photo img {
+    .blog2-photo{
         left: 15px;
+        margin-bottom: 4rem;
     }
 }
 
@@ -698,6 +703,11 @@ margin-top: 25px;
     @media(max-width:600px){
         .contact1-us {
             padding: 0px;
+        }
+        .contact1-input{
+            input{
+                width: 100%
+            }
         }
         .address-icon i {
             position: relative;
